@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "eg">
+    <head>
+        <title>linked button & dropdown menu</title>
+        <meta  charset = "utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .navber{
+                background-color: #40868b;
+                padding  :  1% 7%;
+                text-align: center;
+            }
+            .navber  a{
+                text-decoration: none;
+                color:white;
+                padding:10px 20px;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+            .container{
+                display:inline;
+                position:relative;
+            }
+            .content{
+                position:absolute;
+                top:10px;
+                right:0px;
+                background-color: #40868b;
+                text-align: center;
+                display:none;
+            }
+            .content a{
+                display:block;
+            }
+            .container:hover .content{
+                display:block;
+            }
+        </style>
+        
+    </head>
+    <body>
+      <div><button onclick="window.open('https://www.facebook.com')"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+    </div>
+    <div class="navber">
+        <a href="#">HOME</a>
+        <div class="container">
+            <a href="#">ABOUT</a>
+            <div class="content">
+                <a href="#">FACEBOOK</a>
+                <a href="#">YOUTUBE</a>
+
+            </div>
+        </div>
+      
+    </div>
+        
+      
+    </body>
+</html>
