@@ -1,0 +1,24 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Handlee', 'cursive';
+    font-family: 'Roboto', sans-serif;
+    font-family:'Montserrat', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+
+}
+.row{
+    background:#145A32 ;
+}
+.col{
+    padding:2% 10%;
+}
+header{
+    
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
