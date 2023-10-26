@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .grid-container{
+            display:grid;
+             grid-template-columns: auto auto auto auto; 
+            grid-template-columns: repeat(4,25%);
+             grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+        }
+        .grid-container>div{
+            border:3px solid green;
+            padding:5px;
+        } */
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        body{
+            height:100vh;
+            /* background-color:brown; */
+            grid-template-rows: min-content auto min-content;
+            display:grid;
+            grid-template-areas: 
+            'h'
+            'm'
+            'm'
+            'm'
+            'f'
+            ;
+        }
+        header{
+            grid-area: h;
+            width:100%;
+            background-color:pink;
+            border:solid;
+           
+        }
+        main{
+            grid-area: m;
+            width:100%;
+            height:100%;
+            background-color:brown;
+        }
+        article{
+            display:grid;
+            grid-template-areas: 
+            's1 a1'
+            's2 a2'
+            's3 .'
+            ;
+            height:100%;
+        }
+        section{
+            border:solid;
+        }
+        aside{
+            background-color:coral;
+            border:solid;
+        }
+        footer{
+            grid-area:f;
+            width:100%;
+            display:grid;
+            grid-template-areas: 
+            'n1 n2'
+            ;
+            border:solid;
+            background-color:darkgoldenrod;
+        }
+        @media screen and (max-width: 700px){
+            
+            footer{
+            
+               grid-template-areas: 
+               'n1'
+               'n2' ; 
+            }
+            article{
+           
+                grid-template-areas: 
+                 's1'
+                 's2'
+                 's3' 
+                 'a1'
+                 'a2'
+                 ;
+           
+           }
+        }
+        #sect1{grid-area: s1;}
+        #sect1{grid-area: s2;}
+        #sect1{grid-area: s3;}
+        #asid1{grid-area:a1;}
+        #asid2{grid-area:a2;}
+        #nav1{grid-area:n1;}
+        #nav2{grid-area:n2;}
+    </style>
+</head>
+<body>
+    <!-- <div class="grid-container">
+        <div>
+            <p>The ticket seller asked the stranger respectfully where he (S) liked to go. The stranger replied that he (S) liked to go to Cox's Bazar.</p>
+        </div>
+        <div>
+            <p>The ticket seller asked the stranger respectfully where he (S) liked to go. The stranger replied that he (S) liked to go to Cox's Bazar.</p>
+        </div>
+        <div>
+            <p>The ticket seller asked the stranger respectfully where he (S) liked to go. The stranger replied that he (S) liked to go to Cox's Bazar.</p>
+        </div>
+        <div>
+            <p>The ticket seller asked the stranger respectfully where he (S) liked to go. The stranger replied that he (S) liked to go to Cox's Bazar.</p>
+        </div>
+        <div>
+            <p>The ticket seller asked the stranger respectfully where he (S) liked to go. The stranger replied that he (S) liked to go to Cox's Bazar.</p>
+        </div>
+        <div>
+            <p>The ticket seller asked the stranger respectfully where he (S) liked to go. The stranger replied that he (S) liked to go to Cox's Bazar.</p>
+        </div>
+        <div>
+            <p>The ticket seller asked the stranger respectfully where he (S) liked to go. The stranger replied that he (S) liked to go to Cox's Bazar.</p>
+        </div>
+        <div>
+            <p>The ticket seller asked the stranger respectfully where he (S) liked to go. The stranger replied that he (S) liked to go to Cox's Bazar.</p>
+        </div>
+    </div> -->
+    <header>
+        <nav>Header nav</nav>
+    </header>
+    <main>
+        <article>
+            <section id="sect1">Section1</section>
+            <section id="sect2">Section2</section>
+            <section id="sect3">Section3</section>
+            <aside id="asid1">Aside 1</aside>
+            <aside id="asid2">Aside 2</aside>
+        </article>
+    </main>
+    <footer>
+        <nav id="nav1">Nav 1</nav>
+        <nav id="nav2">Nav 2</nav>
+    </footer>
+</body>
+</html>

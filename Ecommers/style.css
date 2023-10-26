@@ -157,10 +157,11 @@ body{
 }
 /* Side menu ends here*/
 #feedback{
-    width:85%;
+   width:85%;
     margin-left:15%;
     padding:0 1%;
-   height:600px;
+  
+   
   }
   .carousel-item{
     
