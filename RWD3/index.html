@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* .column{
+            width:25%;
+            float:left;
+            padding:10px;
+        }
+        @media screen and (max-width:992px){
+            .column{
+                float:left;
+                width:50%;
+            }
+        }
+        @media screen and (max-width:700px){
+            .column{
+                
+                width:100%;
+            }
+        } */
+        .row{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .column{
+            width:25%;
+            padding:10px;
+        }
+        @media screen and (max-width:992px){
+            .column{
+            width:50%;
+            
+          }
+        }
+        @media screen and (max-width:700px){
+            .column{
+            width:100%;
+            
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>HTML</h1>
+            <p>Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks. It involves designing and implementing algorithms, step-by-step specifications of procedures, by writing code in one or more programming languages</p>
+        </div>
+        <div class="column">
+            <h1>CSS</h1>
+            <p>Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks. It involves designing and implementing algorithms, step-by-step specifications of procedures, by writing code in one or more programming languages</p>
+        </div>
+        <div class="column">
+            <h1>JS</h1>
+            <p>Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks. It involves designing and implementing algorithms, step-by-step specifications of procedures, by writing code in one or more programming languages</p>
+        </div>
+        <div class="column">
+            <h1>BOOTSTRAP</h1>
+            <p>Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks. It involves designing and implementing algorithms, step-by-step specifications of procedures, by writing code in one or more programming languages</p>
+        </div>
+    </div>
+</body>
+</html>
