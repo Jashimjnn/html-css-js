@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .nav-menu{
+          
+           display:flex;
+           justify-content: flex-end;
+           background-color: cadetblue;
+        }
+        .nav-menu ul{
+            
+        }
+        .nav-menu li{
+            list-style-type: none;
+            float:left;
+            padding:10px;
+        }
+        .nav-menu li a{
+            text-decoration: none;
+            padding: 10px;
+            color:white;
+        }
+        .nav-menu li a:hover{
+            background-color: gray;
+        }
+        @media screen and (max-width:700px){
+            .nav-menu{
+                flex-direction: column;
+                padding:10px;
+            }
+            .nav-menu li{
+                background-color:indigo;
+                margin-bottom:10px;
+                width:100%;
+                text-align: center;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-menu">
+        <ul>
+            <li><a href="#">HOME</a> </li>
+            <li><a href="#">ABOUT</a> </li>
+            <li><a href="#">CONTACT</a> </li>
+            <li><a href="#">BLOG</a> </li>
+            <li><a href="#">TUTORIAL</a> </li>
+            <li><a href="#">VISIT</a> </li>
+        </ul>
+    </div>
+</body>
+</html>
