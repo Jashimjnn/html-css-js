@@ -1,0 +1,210 @@
+body{
+    font-family: lato;
+    background-color: #ddd;
+}
+/* card one starts here  */
+.wrapper1{
+    padding:20px;
+    background-color: #414852;
+}
+.card-img-top{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.card-body{
+    text-align:center;
+    box-shadow: 0 15px 15px -8px rgba(0,0,0,0.5);
+}
+.card-body h6{
+    font-size: 14px;
+    text-transform: uppercase;
+    color:deeppink;
+}
+.card-title{
+    font-size: 24px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.socials a{
+    width:40px;
+    height:40px;
+    display:inline-block;
+    border-radius: 50%;
+    margin:0 5px;
+}
+.socials a i{
+    color:#fff;
+    padding:12px 0px;
+}
+.socials a:nth-child(1){
+    background: #3b5998;
+}
+.socials a:nth-child(2){
+    background: #ff0000;
+}
+.socials a:nth-child(3){
+    background: #007bb5;
+}
+.socials a:nth-child(4){
+    background: #ea4c89;
+}
+
+/* Card one stops here */
+/* card two starts here  */
+.wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:6% auto 0;
+    gap:20px;
+    background-color: #414852;
+}
+.single-card{
+    position:relative;
+    width:280px;
+    height:400px;
+    margin:15px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    overflow:hidden;
+    background: #414852;
+    border-radius: 15px;
+    transition:all 0.8s ease-in-out;
+}
+.single-card:hover{
+    transform:translateY(-10px);
+}
+.img-area{
+    position:relative;
+    width:100%;
+    height:200px;
+    overflow:hidden;
+}
+.img-area img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition:transform 0.3s ease;
+}
+.img-area:hover img{
+    transform:scale(1.1);
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,174,255,0.8);
+    opacity:0;
+    transition:opacity 0.3s ease;
+}
+.single-card:hover .overlay{
+    opacity:1;
+}
+.add-to-card, .view-details{
+    background-color:#fff;
+    color:#000;
+    padding:10px 15px;
+    border-radius: 4px;
+    font-size:12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor:poiter;
+    transition: background-color 0.3 ease ,color 0.3 ease;
+    margin-bottom: 10px;
+}
+.add-to-card:hover , .view-details:hover{
+    background-color: orangered;
+    color:#fff;
+    border:none;
+}
+.Info{
+    padding:10px;
+    text-align:center;
+    color:#ddd;
+}
+.Info h3{
+    font-size:30px;
+    font-weight: bold;
+    margin:15px 0 10px;
+    text-transform: uppercase;
+    font-family:bebas neue;
+}
+.Info .price{
+    margin:0;
+    font-size:30px;
+    font-weight:bold;
+    color:aqua;
+}
+/* card two stops here  */
+/* card three starts here  */
+#tutorial{
+    padding:4% 10%;
+    background:#a3d2ca;
+    margin:20px 0;
+}
+
+.card{
+    transition:.4s;
+    border:1px solid #ff02c0;
+}
+.card:hover{
+    transform:scale(1.1);
+    box-shadow: 2px 6px 5px black;
+}
+/* card three stops here  */
+/* card four starts here  */
+.categories1{
+    margin:200px 0;
+    background-color: #414852;
+}
+.categories1 img{
+    width:100%;
+    height:80%;
+    padding:20px 0;
+    transition:1s;
+    cursor:pointer;
+}
+.categories1 img:hover{
+    transform:scale(1.1);
+}
+/* card four stops here  */
+/* card five starts here  */
+
+/* card five stops here  */
+/* card six starts here  */
+/* card six stops here  */
+/* card seven starts here  */
+/* card seven stops here  */
+/* card eight starts here  */
+/* card eight stops here  */
+/* card nine starts here  */
+/* card nine stops here  */
+/* card ten starts here  */
+#features{
+    padding : 5% 10%;
+    background-color: #e8ded2;
+    margin:20px 0;
+}
+.features-col{
+    border : 1px solid #bb0aac;
+    border-radius: 5px;
+    padding:15px;
+    margin:20px 0;
+    transition:.4s;
+}
+.features-col:hover{
+    transform:scale(1.1);
+    box-shadow: 2px 6px 5px black;
+}
+.icon-style{
+    background: #bb0aac;
+    color:white;
+    padding:15px;
+    margin:5px 0;
+}
+/* card ten stops here  */
