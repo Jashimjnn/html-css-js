@@ -348,8 +348,146 @@ document.write("Phone : 01992578305 <br/>");
 
 
 //Event Listener;
-document.querySelector("button").addEventListener("click",mybutton);
-function mybutton()
-{
-    alert("Hello");
-}
+// document.querySelector("button").addEventListener("click",mybutton);
+// function mybutton()
+// {
+//     alert("Hello");
+// }
+
+
+//how to play audio in javascript + //How to add and remove animation + Keypress listener
+// for (var i = 0; i < 3; i++) {
+//     document.querySelectorAll(".btn")[i].addEventListener("click", function () {
+//         var text = this.innerHTML;
+//         console.log(text);
+//         audioPlay(text);
+//         playAnimation(text);
+
+//     });
+// }
+
+// document.addEventListener("keypress",function (event) {
+//     var text = event.key;
+//     audioPlay(text);
+//     playAnimation(text);
+//   });
+
+// function audioPlay(text){
+//     switch (text) {
+//         case "A":
+//             var audio = new Audio("kuje.mp3");
+//             audio.play();
+//             break;
+//         case "B":
+//             var audio = new Audio("kuje.mp3");
+//             audio.play();
+//             break;
+//         case "C":
+//             var audio = new Audio("kuje.mp3");
+//             audio.play();
+//             break;
+//     }
+// }
+// function playAnimation(text){
+//     var slbtn=document.querySelector("."+text)
+//     slbtn.classList.add("anim");
+
+//     setTimeout(function(){
+//         slbtn.classList.remove("anim");
+//     },1000);
+// }
+
+
+
+//DOM Event | Event Object | onchange event
+// const input = document.querySelector('input');
+// input.addEventListener('change',changeHadler);
+
+// function changeHadler(e){
+//     console.log("changed");
+// }
+
+
+
+
+// finding the elements
+// onsubmit event
+// const form = document.querySelector("form");
+// const name = form.querySelector("div #name");
+// const email = form.querySelector("div #email");
+// const password = form.querySelector("div #password");
+
+// form.addEventListener("submit", formHandler);
+
+// function formHandler(e) {
+//   e.preventDefault();
+
+//   const userInfo = {
+//     name: name.value,
+//     email: email.value,
+//     password: password.value,
+//   };
+
+//   console.log(userInfo);
+//   name.value = "";
+//   email.value = "";
+//   password.value = "";
+// }
+
+
+
+//DOM Event | Event Object | media events
+//  audio / video events
+// canplay, play, playing, pause, progress, ended, volumechange, waiting
+// const video = document.querySelector("video");
+// video.addEventListener("canplay", function () {
+//   console.log("canplay");
+// });
+
+// video.addEventListener("play", function () {
+//   console.log("play");
+// });
+// video.addEventListener("playing", function () {
+//   console.log("playing");
+// });
+
+// video.addEventListener("pause", function () {
+//   console.log("pause");
+// });
+// video.addEventListener("ended", function () {
+//   console.log("Thanks for watching");
+// });
+// video.addEventListener("volumechange", function () {
+//   console.log("volumechange");
+// });
+
+
+
+//DOM Event | Event Object | scroll, resize,
+// load, unload,
+// scroll
+// resize
+// toggle - details
+
+// window.addEventListener("load", function () {
+//   console.log("load");
+// });
+// window.addEventListener("unload", function () {
+//   console.log("unload");
+// });
+
+// window.addEventListener("scroll", function () {
+//   console.log("scroll");
+// });
+
+// window.addEventListener("resize", function () {
+//   const width = window.outerWidth;
+//   const height = window.outerHeight;
+//   console.log(`height: ${height}, width: ${width}`);
+// });
+
+const details = document.querySelector("details");
+
+details.addEventListener("toggle", function (e) {
+  console.log(e.target.open);
+});
