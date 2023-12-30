@@ -486,8 +486,181 @@ document.write("Phone : 01992578305 <br/>");
 //   console.log(`height: ${height}, width: ${width}`);
 // });
 
-const details = document.querySelector("details");
+// const details = document.querySelector("details");
 
-details.addEventListener("toggle", function (e) {
-  console.log(e.target.open);
+// details.addEventListener("toggle", function (e) {
+//   console.log(e.target.open);
+// });
+
+
+
+
+
+
+// MouseEvent - <html>, <head>, <meta>, <title>, <br>, <style>, <script>, <iframe>, <param>, <base>, <bdo>
+// 1. onclick
+// 2. ondblclick
+// 3. onmousedown
+// 4. onmousedup
+// 5. onmouseenter
+// 6. onmouseleave
+// 7. onmousemove
+// 8. onmouseover
+console.clear();
+const div = document.querySelector("div");
+div.addEventListener("click", function (e) {
+  //   console.log("click is occured");
+  //   console.log(e.target);
+  //   console.log(e.target.id);
+  //   console.log(e.target.className);
+  //   console.log(e.target.innerHTML);
+  //   console.log(e.target.innerText);
+  //   console.log(e.target.textContent);
 });
+// div.addEventListener("dblclick", function () {
+//   console.log("dblclick is occured");
+// });
+// div.addEventListener("mousedown", function () {
+//   console.log("mousedown is occured");
+// });
+// div.addEventListener("mouseup", function () {
+//   console.log("mouseup is occured");
+// });
+// div.addEventListener("mouseenter", function () {
+//   console.log("mouseenter is occured");
+// });
+// div.addEventListener("mouseleave", function () {
+//   console.log("mouseleave is occured");
+// });
+// div.addEventListener("mouseover", function () {
+//   console.log("mouseover is occured");
+// });
+// div.addEventListener("mousemove", function (e) {
+//   //   console.log("mousemove is occured");
+//   //   console.log("clientX = " + e.clientX + ", clientY = " + e.clientY);
+//   console.log("offsetX = " + e.offsetX + ", offsetY = " + e.offsetY);
+// });
+
+// const buttons = document.querySelectorAll(".btn");
+
+// Array.from(buttons).map((button) => {
+//   button.addEventListener("click", function (e) {
+//     console.log(e.target.innerText);
+//   });
+// });
+
+
+
+
+// KeyboardEvent Object
+// 1. Keydown - pressing a key, can repeat
+// 2. keypress (may not supported by some browsers)
+// 3. keyup
+// some properties - key, keyCode, code, shiftKey, ctlKey, repeat
+
+// const textarea = document.querySelector("textarea");
+// textarea.addEventListener("keydown", function (e) {
+//   if (e.repeat) {
+//     alert("do not repeat");
+//   }
+// });
+// textarea.addEventListener("keypress", function () {
+//   console.log("keypress");
+// });
+// textarea.addEventListener("keyup", function (e) {
+//   if (e.shiftKey) {
+//     console.log("shift+" + e.key);
+//   }
+// });
+
+
+
+
+
+
+// FocusEvent Object
+//  <br>, <head>, <title>, <html>, <iframe>, <meta>, <param>, <script>, <style>, <base>, <bdo>,
+
+// 1. onblur
+// 2. onfocus
+// 3. onfocusin
+// 4. onfocusout
+
+// const input = document.querySelector("input");
+// input.addEventListener("blur", function (e) {
+//   //   console.log(e.target.value);
+//   input.value = e.target.value.toUpperCase();
+// });
+// input.addEventListener("focus", function () {
+//   //   console.log("focus is occured");
+//   //   input.style.backgroundColor = "orange";
+//   //   input.style.padding = "2rem";
+// });
+// input.addEventListener("focusin", function () {
+//   console.log("focusin is occured");
+// });
+// input.addEventListener("focusout", function () {
+//   console.log("focusout is occured");
+// });
+
+
+
+
+// ClipboardEvent Object
+// oncopy
+// oncut
+// onpaste
+// const input = document.querySelector("input");
+// const p = document.querySelector("p");
+// input.addEventListener("copy", function () {
+//   p.innerText = "you have copied";
+// });
+// input.addEventListener("cut", function () {
+//   p.innerText = "you have cut";
+// });
+// input.addEventListener("paste", function () {
+//   p.innerText = "you have pasted";
+// });
+
+
+
+
+
+// BOM (Browser Object Model)
+// window object
+// location object
+/**
+ * Paste the following code in your index.html file
+ *  <h1>BOM</h1>
+    <div class="location-div">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <button id="visit-button">visit my website</button>
+ */
+    console.clear();
+
+    var locationDiv = document.querySelector(".location-div");
+    var p1 = locationDiv.children[0];
+    p1.textContent = location.href;
+    
+    var p2 = locationDiv.children[1];
+    p2.textContent = location.protocol;
+    
+    var p3 = locationDiv.children[2];
+    p3.textContent = location.hostname;
+    
+    var p4 = locationDiv.children[3];
+    p4.textContent = location.port;
+    
+    var p5 = locationDiv.children[4];
+    p5.textContent = location.pathname;
+    
+    const visitButton = document.getElementById("visit-button");
+    visitButton.addEventListener("click", function () {
+      location.assign("https://www.studywithanis.com");
+    });

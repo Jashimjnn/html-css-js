@@ -1,4 +1,4 @@
-.para-style{
+/* .para-style{
     color:red;
     font-size: 3rem;
     font-weight: bold;
@@ -13,4 +13,12 @@
 .anim{
     box-shadow: 0 15px 18px 0 tomato;
     opacity: 0.5;
-}
+} */
+
+
+div {
+    background-color: tomato;
+    height: 20rem;
+    width: 20rem;
+    padding: 2rem;
+  }
